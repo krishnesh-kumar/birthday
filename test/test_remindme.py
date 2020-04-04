@@ -45,7 +45,7 @@ def test_reminder(date,string):
     #for date , string in test_str:
         #c_date=b.Bdate(date)
         #assert c_date.reminder().lower()==string.lower()
-    c_date=b.Bdate(date)
+    c_date=b.todaydate(date)
     print(c_date.reminder())
     print(string)
     assert c_date.reminder().lower()==string.lower()
